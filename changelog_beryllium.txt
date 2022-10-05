@@ -1,0 +1,340 @@
+====================
+    10-17-2022     
+====================
+
+* device/xiaomi/sdm845-common
+bd98a6f  sdm845-common: Remove ndk_platform backend. Use the ndk backend.  [Jiyong Park]
+43c4e29  sdm845-common: Specify version for vibrator aidl_interface explicitly  [Jeongik Cha]
+d19026f  sdm845-common: vibrator: improve the double click effect  [Chenyang Zhong]
+7713185  sdm845-common: vibrator: implement effects for QPNP haptics driver  [Chenyang Zhong]
+6e69403  sdm845-common: vibrator: initial import of QTI Vibrator aidl HAL  [Chenyang Zhong]
+9c4c45a  sdm845-common: Remove ndk_platform backend. Use the ndk backend. The ndk_platform backend will soon be deprecated because the ndk backend can serve the same purpose. This is to eliminate the confusion about having two variants (ndk and ndk_platform) for the same ndk backend.  [Chenyang Zhong]
+199701e  sdm845-common: Specify version for aidl_interface explicitly  [Jeongik Cha]
+6f169ed  sdm845-common: Increase LED brightness  [jjpprrrr]
+ce9a886  sdm845-common: light: satisfy graceful shutdown of backlight  [Chenyang Zhong]
+409f839  sdm845-common: switch to aidl Light HAL Change-Id: I3775c2348bc9cac8f4290c976c7d09c421278519 Signed-off-by: Chenyang Zhong <zhongcy95@gmail.com> Signed-off-by: PainKiller3 <ninadpatil100@gmail.com>  [Chenyang Zhong]
+775e7a7  sdm845-common: light: adapt aidl Light hal for xiaomi_sdm845  [Chenyang Zhong]
+6641f24  sdm845-common: lights: move HIDL implementation to hidl/  [Chenyang Zhong]
+b2503c4  sdm845-common: light: clean up LED blink overrides  [Chenyang Zhong]
+
+
+* frameworks/base
+bcadc98  SystemUI: CompassTile: Add a device supports compass check  [PMS22]
+6a8f9469  SystemUI: QS: Add Compass tile  [romanbb]
+3b6991f  AudioService: Guard against OOB in ringer mode cycle  [Ido Ben-Hur]
+d6f66f0  base: Choose which ringer modes to cycle with the gesture [1/2]  [Ido Ben-Hur]
+
+
+* packages/apps/Aperture
+26111c6  Merge branch 'lineage-20.0' of https://github.com/LineageOS/android_packages_apps_Aperture into HEAD  [Aman Singh]
+0c9a11e  Aperture: Handle cameras that don't support video recording  [LuK1337]
+4aa12ec  Aperture: Properly handle QR scanner activity  [Sebastiano Barezzi]
+901e022  Aperture: Implement leveler  [Teccheck]
+
+
+====================
+    10-16-2022     
+====================
+
+* bootable/recovery
+63e24e2  Only check for powerwash in A/B ota packages  [Tim Zimmermann]
+
+
+* build/make
+a098144  Obsolete BOARD_PLAT_*_SEPOLICY_DIR  [Dan Willemsen]
+
+
+* device/qcom/sepolicy-legacy-um
+fc032c2  sepolicy-legacy-um: poweroffalarm_app: Revert user to _app  [Georg Veichtlbauer]
+
+
+* device/qcom/sepolicy_vndr-legacy-um
+0e13661  Merge branch 'lineage-20.0-legacy-um' of https://github.com/LineageOS/android_device_qcom_sepolicy_vndr into HEAD  [NurKeinNeid]
+
+
+* device/xiaomi/sdm845-common
+be73be8  sdm845-common: Remove QTI BT stack remnants  [Bruno Martins]
+
+
+* frameworks/base
+e4e042d  Follow Dark/Light theme for Safe Mode dialog  [Pulkit077]
+796c582  Pulse: Solid renderer round lines [1/2]  [TikkiTikki]
+bb7d9de  Pulse: Set current Refresh rate as FPS animation value  [Stallix]
+53d80c9  Pulse: Add more NPE checks  [DarkJoker360]
+3497397  Pulse: Extend to Ambient Screen  [spezi77]
+a7d6859  Pulse initial checkin for Android 13 [1/2]  [bigrushdog]
+a546f39  development: Address NPE when removing preferences out of developer options  [Alex Cruz]
+2d45c5f  Add ABS_MT_SLOT config to virtual touch screen.  [Zixuan Qu]
+4e6e75f  SystemUI: Clean up and fix Status bar Logo feature  [timjosten]
+a65183a  base: Custom logo: Cleanup and add more fresh ones [1/2]  [Rizky Benggolo]
+76cb173  base: Clean up Custom logo customizations [1/2]  [minarypenguin]
+6097a19  [SQUASH] Custom logo customizations [1/2]  [Pranav Vashi]
+ff587b1  SystemUI: BluetoothTile: Open bluetooth panel on long press  [Joe Maples]
+1ea7116  SystemUI: NavigationHandle: Don't show on keyguard or doze  [Ido Ben-Hur]
+6946dbd  SystemUI: register battery observer in main thread  [jhonboy121]
+180db95  base: Add Pixel Navigation Bar's Home icon  [Volodymyr Zhdanov]
+3dd5f0a  SystemUI: Use lighter material you shades for charging animation  [minarypenguin]
+4a0c93f  SystemUI: Use color accent for charging animation  [Genkzsz11]
+1e9d002  DreamManager: Expose doze state  [Christopher R. Palmer]
+7fa4003  Fix volume rocker skip track on Ambient Display  [ezio84]
+e7a2322  SystemUI: Block annoying statusbar call strength icon  [xyyx]
+7ff343d  VolumePanel: Pass touch outside of volume panel  [Akash]
+a73f869  Volume panel: avoid multiple animations on touch spam  [Giuseppe Maggio]
+da86262  SystemUI: Optional haptic feedback on back gesture [1/2]  [DennySPb]
+e1e59bb  Fix exception caused by system app setting wallpaper  [Ge Tianxiong]
+6b79842  Telephony: Fix the record output  [Zoey Chen]
+f40ca8a  SystemUI: NavigationModeController: make sure settings proxy is initialized before initializing length mode  [jhonboy121]
+d9ca97d  SystemUI: BrightnessController: do not update slider from DisplayManager callback if user is changing brightness  [jhonboy121]
+67c0044  SystemUI: fix brigtness mirror not showing up in qqs  [jhonboy121]
+db913c7  core: Fix toast background color not changing with theme  [SuperDroidBond]
+461354d  SystemUI: CastTile: Open cast settings on long click  [Ido Ben-Hur]
+e9871a9  appop: Save discrete app op history for more permissions  [Danny Lin]
+d4488cc  SystemUI: Use new privacy indicators for location  [Danny Lin]
+b40aa35d  PixelPropsUtils: Update fingerprints to October 2022  [NurKeinNeid]
+f54ec76  SystemUI: BatteryMeterView: Set white tint in darkmode  [althafvly]
+860d8ba  SystemUI: Re-inflate QS and SB when CONFIG_SCREEN_LAYOUT  [althafvly]
+356030a  add missing display cutout overlays  [Daniel Micay]
+f82f3c8  overlays: Add notchbar killer for left-notch devices  [Jaida Wu]
+72b9061  overlays: Add notch bar killer  [Josh Fox]
+1a2051a  PackageInfo: Optimize ApplicationInfo creation  [Danny Lin]
+7d8882e  SystemUI: mark getIcon as public and static so we can access it  [NurKeinNeid]
+c6a1eb4  LyricViewController: Support multiple dark tint areas  [NurKeinNeid]
+6127e01  SystemUI: Fix status bar lyric overlapping with the center clock  [LibXZR]
+81bba2c  fixup! base: Add status bar lyric [1/3]  [LynnrinChan]
+a2303b9  base: Settings: add Secure.STATUS_BAR_SHOW_LYRIC to System.MOVED_TO_SECURE for compatibility  [cjybyjk]
+84ac8fb  SystemUI: always call startLyric if notification has lyric data  [cjybyjk]
+19bcbbc  base: Add status bar lyric [1/3]  [cjybyjk]
+bc70ea6  base: Allow toggling floating rotation button [1/2]  [Ido Ben-Hur]
+edcaf1c  ClockController: Apply clock position initially  [Ido Ben-Hur]
+fe22986  fixup! SystemUI: Add tunables for clock position  [Ido Ben-Hur]
+0eb1578  base: Reduce horizontal spacing around location icon  [Adithya R]
+f10e4ae  SystemUI: Remove vibrate/mute from status bar blocklist  [Adithya R]
+a61cc8e  Revert "Separate mute and vibrate icons in status bar"  [Adithya R]
+f2814b6  Revert "Add settings observing for vibrate icon to Keyguard"  [Adithya R]
+5be877b  Revert "Sysui changes to support vibrate icon setting"  [Adithya R]
+c0683b2  GlobalActionsDialogLite: Dismiss the dialog when restarting SystemUI  [ezio84]
+d4ae6a6  InternetDialog: Launch mobile network settings on long press  [Adithya R]
+fbc691d  InternetDialog: Require unlocking to turn on hotspot  [Adithya R]
+1ce6086  SystemUI: Add hotspot toggle in QS internet dialog  [Adithya R]
+3afd6c1  SystemUI: Require unlocking to use USB Tether QS tile  [inthewaves]
+42b7697  SystemUI: Flags: Enable COMBINED_STATUS_BAR_SIGNAL_ICONS  [Ido Ben-Hur]
+5fdc1b3  SystemUI: QSCustomizer: Fix QS tile reset text color  [althafvly]
+ec5b9d1  UI: Follow Monet and light/dark theme in user 1 icon  [Andy CrossGate Yan]
+044c575  base: Add support for window ignore secure  [LibXZR]
+b2dc575  SystemUI: QSAnimator: Hide secondary label in QQS  [Adithya R]
+d7ded5f  data: Add FORCE_STOP_PACKAGES permission to launcher3  [NurKeinNeid]
+ff8f62d  SystemUI: Fix QS header animation in RTL mode  [Adithya R]
+d1f1dc0  SystemUI: Animate cutout padding for QS clock  [Andy CrossGate Yan]
+24b1d33  SystemUI: Align QS header with status bar  [cjh1249131356]
+bd6ee96  base: QS tiles layout customizations [1/2]  [cjh1249131356]
+150a546  SystemUI: QS vertical layout & hide label settings [1/2]  [maxwen]
+40477c6  Reland "Don't enable jdwp by default on userdebug builds""  [Mythri Alle]
+7352789  Fix action bar font family on material themes  [Henrique Silva]
+a43f953  IllustrationPreference: Hide illustration when we fail to play anim  [LuK1337]
+a77a23e  base: grant storage permissions for Updater  [Ali B]
+fb7b0f2  UpdateEngine: Add perf mode binder interface  [Luca Stefani]
+e31ef23  NavigationBarEdgePanel: Make the gesture duration always valid  [LibXZR]
+be2e408  EdgeBackGestureHandler: Change back gesture height intervals  [Anushek Prasal]
+dc167ad  base: navigation mode settings [1/2]  [maxwen]
+86c90b36  styles: Use user fonts for Material UI themes  [Danny Lin]
+d43cbc7  RingtoneManager: Set an default ringtone for the SIM 2  [micky387]
+7eb1503  base: Phone ringtone setting for Multi SIM device [1/3]  [Ting Yu]
+05b9bde  SystemUI: Use max Display.Mode in AuthController as well  [LuK1337]
+20ced25  Save user preferred resolution into persistent data store  [LuK1337]
+6cb3a58  SystemUI: Allow Configuring Navbar Radius [1/2]  [spkal01]
+086e195  base: Long press power button to toggle torch [1/2]  [ezio84]
+6ae6518  SystemUI: add Pulse and Ambient notification bars [1/2]  [kldoc]
+e832b98  SystemUI: Follow light/dark theme in SplitShade Header  [ReallySnow]
+0bdc5c2  SystemUI: Remove qs actions footer background  [BladeRunner-A2C]
+76261c9e  SystemUI: Reset to textColorPrimaryInverse for light theme  [Xayah]
+2e41274  base: AudioService: bail out if ringer mode is not recognized  [jhonboy121]
+d3dac00  SystemUI: Name Cellular Tile based on carrier  [Manojkumar Murugeshan]
+774a521  SystemUI: Fix crash in cast tile for non-carrier wifi  [Chris Crump]
+43c2865  CastTile: Fix availability of Cast Quick Setting Tile  [Indranil]
+729ef4a  Make sensor block package list configurable [1/2]  [Hikari-no-Tenshi]
+b7eb8df  base: Add Accelerometer and Linear Acceleration sensors in blocking list  [HolyAngel]
+fcac5af  Settings: make SensorBlock readable by non-system apps  [Ali B]
+836daae  FWB: Sensor block per-package switch (1/2)  [LorDClockaN]
+a9a7502  SystemSensorManager: sensor block per-package  [Simao Gomes Viana]
+43749f4  SystemUI: QuickQSPanelController: update slider visibility when panel is attached  [jhonboy121]
+884523a  Add DerpSpace CategoryKey  [XlxFoXxlX]
+99c84cf  Privacy Indicators: Follow light/dark theme settings  [minarypenguin]
+bb1a581  Avoid Settings app NPE on broken packages  [t-m-w]
+3d0a726  SystemUI: fix black qqs on keyguard in light theme  [jhonboy121]
+8e601bf6  core: Fix menu popup ripple  [timjosten]
+cf3023b  SystemUI: Fix QS tile view active tint  [str143]
+88797ba  GameSpaceManager: Update TaskStack listener usage  [Nauval Rizky]
+6221677  GameSpaceManager: restrict broadcast to MANAGE_GAME_MODE holders only  [Nauval Rizky]
+730debc  SystemUI: Update gamespace for A13  [Genkzsz11]
+94c21c2  SystemUI: Add support for GameSpace  [Nauval Rizky]
+6cb71cd  SystemUI: Export RecordingService for External Usage  [cjybyjk]
+b85da49  [SQUASH] SystemUI: Forward-port notification counters [1/2]  [Steve Kondik]
+3c5a807  base: wm: Follow rounded corners by split divider corner size  [ReallySnow]
+80469c5  SystemUI: Fix QS header clock color  [Danny Baumann]
+697b1a8  Don't skip theme application if it's already current  [Michael Bestas]
+09a50c6  SystemUI: support black theme for dark mode [1/4]  [althafvly]
+99521b9  ThemeOverlayApplier: Apply wifi and signal icon styles last  [Pranav Vashi]
+abf8360  ThemeOverlayApplier: Catch a potential NPE  [spezi77]
+88180d8  Bring back ThemeUtils for Theming  [sb6596]
+7dd00db  SystemUI: Allow customizing footer text [1/2]  [Ido Ben-Hur]
+ea9121c  base: Allow toggling QS footer text [1/2]  [Ido Ben-Hur]
+f5ba46e  Allow to disable qs footer warnings [1/2]  [ezio84]
+4dd4ae5  Dark Theme "TURN ON UNTIL SUNRISE" is not retained after reboot  [Sameer Zalke]
+4ff2dcc  overlays: IconPack: Rename config_signalXPath  [Adithya R]
+04a0305  base: overlays: Add Xperia overlays  [AndroBuddy]
+c6ed298  overlays: Introduce Outline iconpack  [Niklas Schnettler]
+7abb698  acherus: Add settings overlay  [Genkzsz11]
+2778013  acherus: Wrap a few icons with inset  [Pranav]
+484292f  overlays: Add acherus icon pack  [Pranav]
+36545aef0  overlays: Introduce PUI iconpack  [spkal01]
+6a7b6e4  overlays: oos: Import stock oos settings icons  [RedSkulHYDRA]
+4f709cc  overlays: declare the right overlay category  [jhonboy121]
+17c1c03  overlays: oos: Add dummy icons to fix preview  [Pranav Vashi]
+c1a2fdb  overlays: oos: Adjust width and height for dnd and vibrate icons  [jhonboy121]
+5d32d57  overlays: oos: Add statusbar bluetooth icons  [imjyotiraditya]
+226891d  overlays: oos: Fix edit icon color in Settings  [AshutoshSundresh]
+7494653  overlays: Add an OxygenOS icon pack  [AshutoshSundresh]
+b6ee158  overlays: fixup themepicker package name for IconPacks  [Omkar Chandorkar]
+add9bfb  overlays: fixup launcher package name for P20 icons  [Omkar Chandorkar]
+eb42bc0  IconPackKaiAndroidOverlay: fix for carriers using 5 bars of signal  [Anay Wadhera]
+a3b45e0  IconPackRounded: Use correct icon for notification and ring volume  [Arian]
+94f597a  overlays: Add unlinked ringtone and notification volume icons  [Adnan Begovic]
+2d999eb  IconPack{Kai,Victor}: Fix clock icon  [DarkJoker360]
+df40027  IconPack{Sam,Victor}: Inverse vol collapse/expand anim path data  [Dhina17]
+566e04e  SystemUI: Fix size of icon of vibrate ringer mode for additional icon packs  [Volodymyr Zhdanov]
+8b27927  overlays: Unify icon packs category name  [Adithya R]
+f2b54d8  overlays: bring back icon packs  [jhonboy121]
+042d402  InputMethodService: Volume key cursor control (1/2)  [Konsta]
+0e6b691  QuickSettings: Allow changing vibration duration [1/2]  [Jason Edson]
+0cc801c  Add interpolators to qs tiles animation [1/2]  [Nico60]
+5351a5f  Add animations to quick settings tiles [1/2]  [Nico60]
+22e632c  QuickSettings: Add Haptic Feedback to tiles [1/2]  [Evisceration]
+fefeb3c  SystemUI: match brightness slider track height with the progress drawable  [jhonboy121]
+848d2b7  SystemUI: QSTileImpl: bail out early in handleLongClick if getLongClickIntent retuend null  [Alfred Mathew]
+a821ae6  SystemUI: brightness slider customisations [1/2]  [jhonboy121]
+6f9741b  Skip less boring notification check when reTicker mode is active  [Pranav Vashi]
+ef5096f  reTicker: Do not jump to app when clicked in games  [cjh1249131356]
+f162ceb  reTicker: Cleanup  [cjh1249131356]
+1db181e  reTicker: Do not show when content/icon is null  [cjh1249131356]
+127a440  reTicker: Allow to only show in Landscape mode [1/2]  [cjh1249131356]
+473c32f  Properly update view for reTicker  [Pranav Vashi]
+2cc709e  Feature: reticker [1/2]  [Dil3mm4]
+73c6ee7  SystemUI: Redo circle battery style  [althafvly]
+9f281f3  SystemUI: Bring back good ol' circle battery style  [Luca Stefani]
+1e82671  SystemUI: Drop style TextAppearance.QS.Status in dark mode  [Col_or]
+2fa8938  SystemUI: Only apply tuning changes when the fragment is attached  [LibXZR]
+fab0b64  SystemUI: Make center clock follow paddingTop  [cjh1249131356]
+470c7ef  SystemUI: Add tunables for clock AM/PM style  [Michael Bestas]
+aefe125  SystemUI: Add tunables for clock position  [Luca Stefani]
+6088f91  PreviewInflater: Fix issue with google dialer widget on keyguard  [Pranav Vashi]
+567bc52  SystemUI: Remove unnecessary showVoLTEIcon config.  [spezi77]
+5133075  Allow to hide arrow for back gesture [1/2]  [Ali B]
+b298f0a  TwilightService: Save and use last fetched location  [Ido Ben-Hur]
+5b07968  TwilightService: Use temporary TwilightState when location is not available  [rituj]
+
+
+* frameworks/native
+1f83c1b  SF: Bring back support for disabling backpressure propagation  [Adithya R]
+
+
+* frameworks/opt/timezonepicker
+b33ea5b  Merge tag 'android-13.0.0_r11' into staging/lineage-20.0_merge-android-13.0.0_r11  [Michael Bestas]
+
+
+* hardware/interfaces
+73f5570  Support P010 with Gralloc2 on Gralloc1 passthrough  [Jason Macnak]
+
+
+* libcore
+4f7b268  Merge tag 'android-13.0.0_r11' into staging/lineage-20.0_merge-android-13.0.0_r11  [Michael Bestas]
+
+
+* manifest
+666acff  manifest: Fix AOSP remote URL  [Danny Lin]
+96fa0a5  manifest: Initial setup for DerpFest 13  [NurKeinNeid]
+
+
+* packages/apps/Aperture
+b735f95  Aperture: Remove unnecessary class bodies  [LuK1337]
+3e6ac7a  Aperture: Remove unused variable  [LuK1337]
+08013ee  Aperture: Remove unused CameraController extension  [LuK1337]
+94c3edf  Aperture: Add missing annotations to QrScannerActivity  [LuK1337]
+da11276  Aperture: Disable touch sounds for shutter button  [althafvly]
+
+
+* packages/apps/DerpLauncher
+a6c37f3  DerpLauncher: Do not attach cleanupScreenshot() to frame update event  [LibXZR]
+
+
+* packages/apps/DerpSpace
+4be7088  DerpSpace: Pulse initial checkin for Android 13 [2/2]  [ezio84]
+
+
+* packages/apps/Settings
+c9364ec  PreventRingingParentPreferenceController: Refactor summary generation  [Ido Ben-Hur]
+4f2d8cf  Settings: Choose which ringer modes to cycle with the gesture [2/2]  [Ido Ben-Hur]
+
+
+* system/core
+6454c84  healthd: Fix charger_res_images_vendor install location  [Tim Zimmermann]
+
+
+* system/sepolicy
+d54605b  Obsolete BOARD_PLAT_*_SEPOLICY_DIR  [Dan Willemsen]
+
+
+* tools/extract-utils
+56fbdef  extract_utils: Sync adb pull paths with local extract  [LuK1337]
+
+
+* vendor/derp
+7be58e7  overlay: common: Move GMS overlays elsewhere  [Nolen Johnson]
+
+
+* vendor/support
+7b7ec44  support: Import SecureSettingColorPickerPreference  [Pranav Vashi]
+
+
+====================
+    10-15-2022     
+====================
+
+* build/make
+85010b1  Merge pull request #8 from amanrajOO7/13  [Alexander Brunswig]
+
+
+* hardware/libhardware
+8b5b970  Merge pull request #2 from EndCredits/13-patch-1  [Alexander Brunswig]
+4372494  audio_amplifier: Add hook for amplifier calibration  [Luofan Chen]
+
+
+* packages/apps/Aperture
+05bc53a  Aperture: Override Camera2  [zclkkk]
+d040ad7  Revert "Aperture: Add monochrome icon support"  [NurKeinNeid]
+
+
+* vendor/derp
+d1b6be8  Merge pull request #27 from amanrajOO7/13  [Alexander Brunswig]
+
+
+====================
+    10-14-2022     
+====================
+
+====================
+    10-13-2022     
+====================
+
+* hardware/qcom-caf/sm8250/audio
+45ceff8  audio_amplifier: Change the enable amplifier function location  [Luofan Chen]
+
+
+* hardware/qcom/camera
+f491593  msm8998: camera: Fix -Wstring-concatenation error  [Eamon Powell]
+
+
+* tools/extract-utils
+3d1e865  extract-utils: Fix for `sh_binary`  [Mohd Faraz]
+23e4b57  extract_utils: extract recovery and vendor_ramdisk  [Mohd Faraz]
+
+
