@@ -1,125 +1,98 @@
 ====================
-    07-07-2023     
+    07-18-2023     
 ====================
 
+* device/xiaomi/sdm845-common
+94e7878  sdm845-common: overlay: Enable voLTE/voWIFI/ViLTE for Sri Lankan Networks  [helliscloser]
+54f4aac  sdm845-common: CarrierConfig: Enable VoLTE for Beeline  [Jarl-Penguin]
+32646b1  sdm845-common: CarrierConfig: Enable VoLTE and Wi-Fi calling for Telcel  [Jarl-Penguin]
+edd583d  sdm845-common: overlay: Allow VoLTE and VoWiFi/WFC by default  [Jake Weinstein]
+e7ade44  sdm845-common: overlay: disable IMS features for TIM Brazil - unsupported by carrier, leads to high modem drain  [Jake Weinstein]
+
+
 * frameworks/base
-6a0b5de  Fix the memory leak during high speed recording  [Hiroki Mine]
-232211e  SystemUI: Refresh system icons on theme change  [Tobias Merkel]
-4e07351  Revert "PixelPropUtils: Un-spoof GMS while adding google account"  [Aman Singh]
-3d32388  Revert "PixelPropUtils: Misc updates"  [Aman Singh]
-fb66a06  base: Double tap to trigger doze [1/2] Thanks to yank555-lu for the original commit YAOSP-NG/frameworks_base@d6ac164. Cleaned up and ported to Android 10 by SKULSHADY.  [SKULSHADY]
-cf6eb91  display: Add simple RGB color balance transform  [Danny Lin]
+eb25fa1  Fix the memory leak during high speed recording  [Hiroki Mine]
+a760247  base: Double tap to trigger doze [1/2] Thanks to yank555-lu for the original commit YAOSP-NG/frameworks_base@d6ac164. Cleaned up and ported to Android 10 by SKULSHADY.  [SKULSHADY]
+c42e481  display: Add simple RGB color balance transform  [Danny Lin]
+f8a3d8a  Merge pull request #21 from CrisBalGreece/13  [Alexander Brunswig]
+95aa464  fwb/SysUI: Add Hellenic translations  [CrisBal]
+e32d1f0  core: Catch OOB when returning pooled string  [minaripenguin]
+6394aac  core: Workaround for bad base64  [minaripenguin]
+016f4d5  core: Workaround for ASI crash  [minaripenguin]
+5eda8b9  PixelPropUtils: refactor  [aswin7469]
+a6b0e63  PixelPropsUtils: Remove pixel whitelist  [jhenrique09]
+a386be1  base: ApplicationPackageManager: Exclude PE 2021 Midyear from tensor pixel list  [someone5678]
+b5043c9  base: ApplicationPackageManager: Block Tensor features for Recorder  [someone5678]
+d1fb5d0  SystemUI: Fix battery color on QS for circle battery styles  [Pranav Vashi]
+a6384db  Revert "hwui: renderthread/CanvasContext: Reduce the timeout for dequeueing buffers"  [exactxmpl]
+
+
+* packages/apps/DerpLauncher
+0354014  Merge pull request #9 from CrisBalGreece/13  [Alexander Brunswig]
+fc78a51  DerpLauncher: Add Hellenic translations  [CrisBal]
+
+
+* packages/apps/DerpSpace
+263f41d  Merge pull request #12 from CrisBalGreece/13  [Alexander Brunswig]
+4cf16bc  DerpSpace: res/values-el: Add Hellenic translation  [CrisBal]
 
 
 * packages/apps/Settings
-947af73  Settings: Double tap to trigger doze [2/2]  [SKULSHADY]
-5aad228  Settings: Show current value of color balance sliders  [Adithya R]
-224016b  Add sliders for color balance adjustment via ColorDisplayManager  [Danny Lin]
+6efeb0c  Settings: Double tap to trigger doze [2/2]  [SKULSHADY]
+8f778b4  Settings: Show current value of color balance sliders  [Adithya R]
+999a79f  Add sliders for color balance adjustment via ColorDisplayManager  [Danny Lin]
+e96327d  Merge pull request #10 from CrisBalGreece/13  [Alexander Brunswig]
+9b26383  Settings: Add Hellenic translations  [CrisBal]
 
 
 * vendor/derp
-b185145  derp: Update default wallpaper  [Aman Singh]
-ecdc558  Merge pull request #42 from CrisBalGreece/13  [Alexander Brunswig]
+b020a06  derp: Update default wallpaper  [Aman Singh]
+6ab4c93  Merge pull request #48 from AbrarNoob/patch-1  [Alexander Brunswig]
+56ad192  Merge pull request #49 from FPSensor/patch-1  [Alexander Brunswig]
+abdc03f  devices: add Motorola Khaje devices  [FPSensor]
 
 
 ====================
-    07-06-2023     
+    07-17-2023     
 ====================
-
-* build/make
-dab591f  Merge tag 'android-13.0.0_r61' of https://android.googlesource.com/platform/build into HEAD  [NurKeinNeid]
-
-
-* frameworks/av
-e456144  Merge tag 'android-13.0.0_r61' of https://android.googlesource.com/platform/frameworks/av into HEAD  [NurKeinNeid]
-d057293  Merge pull request #4 from Klozz/13  [Alexander Brunswig]
-
-
-* frameworks/base
-a512475  PixelPropsUtils: Update for July 2023 security patch  [NurKeinNeid]
-666a626  base: Do not reset keyguard going away state  [minarypenguin]
-865b96f  Merge tag 'android-13.0.0_r61' of https://android.googlesource.com/platform/frameworks/base into HEAD  [NurKeinNeid]
-9a18614  Merge pull request #15 from DF-Whyred/13  [Alexander Brunswig]
-
-
-* manifest
-2ad27ed  manifest: July 2023 Security update  [Michael Bestas]
-3edf666  Merge tag 'android-13.0.0_r61' of https://android.googlesource.com/platform/manifest into HEAD  [NurKeinNeid]
-63b96c6  Manifest for Android 13.0.0 Release 61  [The Android Open Source Project]
-
-
-* packages/apps/Settings
-af951d2  Merge tag 'android-13.0.0_r61' of https://android.googlesource.com/platform/packages/apps/Settings into HEAD  [NurKeinNeid]
-
-
-* packages/modules/Bluetooth
-b9c5c6a  Merge pull request #1 from Klozz/13  [Alexander Brunswig]
-
-
-* packages/modules/Wifi
-1607baa  Merge tag 'android-13.0.0_r61' of https://android.googlesource.com/platform/packages/modules/Wifi into HEAD  [NurKeinNeid]
-
 
 * vendor/derp
-da841c4  Merge pull request #41 from TheStrechh/13  [Alexander Brunswig]
-b363870  devices: Add le_x2 (LeEco LeMax2)  [CrisBal]
+3935df6  devices: add alioth (Poco F3/Mi 11x)  [Hasin Abrar Haque]
 
 
 ====================
-    07-05-2023     
+    07-16-2023     
 ====================
 
 * frameworks/base
-6cea036  SystemUI: Enable and tune Split notification shade  [minaripenguin]
-
-
-* vendor/derp
-fdaa5b0  devices: Add Poco X5 Pro 5G (redwood)  [Carlos Arriaga]
+6a1f057  fixup! BatteryService: Add SuperDart charging support  [NurKeinNeid]
 
 
 ====================
-    07-04-2023     
+    07-15-2023     
 ====================
 
 * packages/apps/Aperture
-ed10abf  Merge pull request #1 from amanrajOO7/13  [Alexander Brunswig]
-e9f3d26  Merge branch 'lineage-20.0' of https://github.com/LineageOS/android_packages_apps_Aperture into HEAD  [Aman Singh]
+21ece78  Merge pull request #2 from amanrajOO7/13  [Alexander Brunswig]
 
 
 * vendor/derp
-f9bdea9  prebuilt: Update Symphonica  [NurKeinNeid]
+e350a04  Merge pull request #47 from hac4us06/13  [Alexander Brunswig]
 
 
 ====================
-    07-03-2023     
+    07-14-2023     
 ====================
 
 * frameworks/base
-6526dee  Revert "Conditionally "Revert "udfps: Trigger onFingerDown with regular action down events too"""  [Harish]
-31400ae  SystemUI: Prevent another OOB when creating tile views  [minaripenguin]
-50e55f8  WiredAccessoryManager: Add support for DP audio  [LuK1337]
-2b8b55b  pm: Restore the default behavior of `pm install`  [Adithya R]
-b76d868  SystemUI: Restore try-finally condition when reinflating QS panel  [minaripenguin]
-c059e8e  SystemUI: Catch the remaining exceptions when re-inflating the qs panel  [minaripenguin]
-1052d87  QSPanel: Prevent systemui crash when adjusting tiles height  [minaripenguin]
+262a68a  Merge pull request #18 from Codecity001/13  [Alexander Brunswig]
 
 
 * packages/apps/Aperture
-6aa5ea8  Aperture: Make the supported quality list an unordered map  [Sebastiano Barezzi]
-2d52dfb  Aperture: Frame rates lists should be unordered sets  [Sebastiano Barezzi]
-957d8a2  Aperture: Framerate -> frame rate  [Sebastiano Barezzi]
-afc2753  Aperture: Dedup secondary top bar attributes into theme  [Sebastiano Barezzi]
-5f4883a  Aperture: Update CameraX to 1.3.0-beta01  [LuK1337]
-
-
-* vendor/derp
-f5b77cd  Merge pull request #40 from Klozz/patch-2  [Alexander Brunswig]
-cb31998  devices: Add mondrian (POCO F5 Pro)  [klozz (TeamMEX)]
-f75d349  bootanimation: Make it work on all devices  [CrisBal]
-08def65  Revert "Include build manifest on target"  [NurKeinNeid]
-
-
-* vendor/gms
-d24e1cb  Update from cheetah TQ3A.230605.012  [Aman Singh]
+033c7c2  Merge branch 'lineage-20.0' of https://github.com/LineageOS/android_packages_apps_Aperture into HEAD  [Aman Singh]
+c1472a0  Aperture: Simplify flash mode handling  [Sebastiano Barezzi]
+9e0a3f7  Aperture: CameraActivity: Get rid of update{PrimaryBar,CameraMode}Buttons()  [Sebastiano Barezzi]
+a1cad08  Aperture: Use the view model for views' rotation  [Sebastiano Barezzi]
+1a512eb  Aperture: Introduce CameraViewModel  [Sebastiano Barezzi]
 
 
