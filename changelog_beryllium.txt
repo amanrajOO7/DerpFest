@@ -1,79 +1,122 @@
 ====================
-    09-09-2023     
+    09-18-2023     
 ====================
 
-* build/make
-47e04cc  Bump Security String to 2023-09-05  [NurKeinNeid]
-
-
-* frameworks/av
-bece0d2  Merge tag 'android-security-13.0.0_r9' of https://android.googlesource.com/platform/frameworks/av into HEAD  [NurKeinNeid]
-
-
 * frameworks/base
-51f40e4  display: Add simple RGB color balance transform  [Danny Lin]
-ba88622  GlobalActionsDialog: Enable blur behind via window flags  [Dhina17]
-a47c4d9  DeviceInfoUtils: Read security patch from org.derpfest.build_security_patch  [jhenrique09]
-53fb589  Merge tag 'android-security-13.0.0_r9' of https://android.googlesource.com/platform/frameworks/base into 13  [NurKeinNeid]
+2ad19dd  display: Add simple RGB color balance transform  [Danny Lin]
+2d02cac  base: Add a toggle for secure tiles on keyguard [1/2]  [Ido Ben-Hur]
+9b0fbaa  Revert "Make "Require unlocking to use sensitive QS tiles" optional [1/2]"  [NurKeinNeid]
+3d57948  SystemUI: Pass touch events to pulsing gesture listener only if dozing  [Dhina17]
+3282171  SystemUI: Move DT2S from PulsingGestureListener  [Dhina17]
+6810642  Move Bluetooth timeout back to AOSP settings  [t-m-w]
+007fad03  Wi-Fi timeout feature  [Oliver Scott]
+0e82619  AlarmManager: create setExactAndAllowWhileIdle variant based on alarm listener  [Oliver Scott]
+480f6ea  BatteryStatsImpl: Avoid dividing by 0.0 in updateWifiState.  [Shumao Hou]
+8439ef0  BatteryStatsImpl: Fix divide by zero error  [minaripenguin]
+704fb1e  fixup! Hide hidden apps from all apps except system  [Wang Han]
+8fc1263  Allow "Panic" to silently uninstall packages.  [Chirayu Desai]
+f1e187d  Create system package demotion list  [Oliver Scott]
+0967006  SystemUI: Make isLargeScreen() use correct API for getting window metrics  [LuK1337]
 
 
-* frameworks/native
-1035899  Merge tag 'android-security-13.0.0_r9' of https://android.googlesource.com/platform/frameworks/native into 13-diff  [NurKeinNeid]
+* manifest
+2a6d268  manifest: Fetch Panic app  [Chirayu Desai]
 
 
-* packages/apps/DerpLauncher
-c69b78a  Merge tag 'android-security-13.0.0_r9' of https://android.googlesource.com/platform/packages/apps/Launcher3 into HEAD  [NurKeinNeid]
+* packages/apps/DerpSpace
+d5610f2  DerpSpace: Update for secure tiles on keyguard  [NurKeinNeid]
 
 
-* packages/apps/Nfc
-6b6c3b0  Merge tag 'android-security-13.0.0_r9' of https://android.googlesource.com/platform/packages/apps/Nfc into HEAD  [NurKeinNeid]
+* packages/apps/GameSpace
+2933451  GameSpace: Add missing permission usage for Danmaku service  [minaripenguin]
+ee1d5b0  GameSpace: Update priv-app permissions whitelist  [minaripenguin]
 
 
 * packages/apps/Settings
-f5a1eb3  Settings: Show current value of color balance sliders  [Adithya R]
-4348f04  Add sliders for color balance adjustment via ColorDisplayManager  [Danny Lin]
-4fc2773  Settings: storage: Do not skip primary user when listing non-logged in users  [Ramii Ahmed]
-f4c4381  Merge tag 'android-security-13.0.0_r9' of https://android.googlesource.com/platform/packages/apps/Settings into HEAD  [NurKeinNeid]
+827a155  Settings: Show current value of color balance sliders  [Adithya R]
+b3f9f40  Add sliders for color balance adjustment via ColorDisplayManager  [Danny Lin]
+038ff92  Restrict "Turn on wifi automatically" to USA and Canada  [Chirayu Desai]
+26dd257  fixup! Wi-Fi timeout feature  [Tommy Webb]
+37c2321  Bluetooth timeout feature  [Oliver Scott]
+afa857b  Wi-Fi timeout feature  [Oliver Scott]
 
 
 * packages/modules/Bluetooth
-f0cd899  Merge tag 'android-security-13.0.0_r9' of https://android.googlesource.com/platform/packages/modules/Bluetooth into HEAD  [NurKeinNeid]
+39f73a0  fixup! BluetoothManagerService: check if bluetooth is in airplane mode radios before disabling  [Oliver Scott]
+f1308a2  Bluetooth timeout feature  [Oliver Scott]
+d0025c2  BluetoothManagerService: allow bluetooth auto-enable if not in airplane mode radios  [Oliver Scott]
+b617506  BluetoothManagerService: check if bluetooth is in airplane mode radios before disabling  [Oliver Scott]
 
 
-* packages/providers/MediaProvider
-6370bbb  Merge tag 'android-security-13.0.0_r9' of https://android.googlesource.com/platform/packages/providers/MediaProvider into HEAD  [NurKeinNeid]
-
-
-* packages/services/Telephony
-dab0f1a  Merge tag 'android-security-13.0.0_r9' of https://android.googlesource.com/platform/packages/services/Telephony into HEAD  [NurKeinNeid]
+* packages/modules/Wifi
+d3f9e9c  Wi-Fi timeout feature  [Oliver Scott]
 
 
 * vendor/derp
-0d9fadc  derp: Update default wallpaper  [Aman Singh]
-042735c  derp: Add CUSTOM_SECURITY_PATCH prop  [jhenrique09]
+8949611  derp: Update default wallpaper  [Aman Singh]
+265f6b4  config: Build the textclassifier models  [Dyneteve]
+cc15dbe  config: Build Panic  [Aayush Gupta]
 
 
 ====================
-    09-08-2023     
+    09-17-2023     
+====================
+
+* build/soong
+6f8ca4b  [T-Only] Add android.hardware.power-V3-ndk to VndkMustUseVendorVariantList  [Jake Weinstein]
+
+
+* device/derp/sepolicy
+a7ed0ad  common: Move in mediashell rules from ATV  [LuK1337]
+
+
+* frameworks/base
+ac5d5e3  fixup! GlobalActionsDialog: Enable blur behind via window flags  [Dhina17]
+42d5b605  base: Add toggle for google photos spoofs  [spezi77]
+44ab885  base: Avoid hiding development status to system apps  [minaripenguin]
+58a7d48  base: Hide ADB and developer setting enable status  [someone5678]
+5995d87  TypeFace: Don't override monospace  [minaripenguin]
+d940c42  fonts: Add more sans-serif aliases  [minaripenguin]
+d55dda9  Allow to hide arrow for back gesture [1/2]  [Ali B]
+357b00b  Fix zen mode dialog bugs  [nift4]
+4d39c3c  core: pm: Allow wildcard in RRO system property value checks  [Luca Stefani]
+48d2c89  SystemUI: Fix a runtime exception cause by wrong retrieval of drawable  [minaripenguin]
+
+
+* packages/apps/DerpSpace
+d85d58d  DerpSpace: General tweaks: User toggle for unlimited g00gle ph0t0s st0rage [2/2]  [spezi77]
+
+
+* packages/apps/FaceUnlockService
+d70f07c  Merge branch 'thirteen' of https://github.com/PixelExperience/packages_apps_FaceUnlockService into HEAD  [NurKeinNeid]
+
+
+* packages/apps/Settings
+a590810  Settings: Allow to hide arrow for back gesture [2/2]  [Nebrassy]
+
+
+* vendor/derp
+b6d5ad2  overlay: Move config_hspa_data_distinguishable to proper location  [Tommaso Fonda]
+
+
+* vendor/qcom/opensource/power
+fe06dd1  power: Remove unused variable  [Chippa-a]
+edcfb0f  Merge branch 'lineage-20.0' of https://github.com/LineageOS/android_vendor_qcom_opensource_power into HEAD  [NurKeinNeid]
+
+
+====================
+    09-16-2023     
 ====================
 
 ====================
-    09-07-2023     
-====================
-
-* hardware/qcom-caf/sm8450/audio/agm
-37b4130  agm: Fix OSS compile for plugins  [Aaron Kling]
-
-
-* hardware/qcom-caf/sm8450/audio/pal
-faf5da4  pal: Update kvh2xml for current branch  [Aaron Kling]
-
-
-====================
-    09-06-2023     
+    09-15-2023     
 ====================
 
 ====================
-    09-05-2023     
+    09-14-2023     
 ====================
+
+* packages/apps/FaceUnlockService
+d1145d8  Automatic translation import  [jhenrique09]
+
 
