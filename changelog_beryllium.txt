@@ -1,155 +1,87 @@
 ====================
-    09-25-2023     
+    10-02-2023     
 ====================
 
 * frameworks/base
-23ddaae  display: Add simple RGB color balance transform  [Danny Lin]
-09f854a  GameManagerService: Set device_config property on behalf of GameSpace  [Dhina17]
+97007a7  display: Add simple RGB color balance transform  [Danny Lin]
 
 
-* packages/apps/GameSpace
-92f3ea4  GameSpace: Don't set device_config property directly  [Dhina17]
-
-
-* vendor/derp
-7737a7a  derp: Update default wallpaper  [Aman Singh]
-
-
-====================
-    09-24-2023     
-====================
-
-* packages/apps/DerpLauncher
-3060622  fixup! DerpLauncher: Allow hiding top shadow on statusbar  [Adithya R]
+* hardware/lineage/interfaces
+270a3fe  health: Add battery_charging_enabled node to ChargingControl node list  [me-cafebabe]
 
 
 * packages/apps/Flash
-9c4a0b9  Flash: Update CameraX to 1.4.0-alpha01  [LuK1337]
-5e9bc1f  Flash: Don't pass `repository` unnecessarily  [LuK1337]
-ad63dc5  Flash: Use composite action for running builds  [LuK1337]
-90051f4  Flash: Update ZXing to 3.5.2  [LuK1337]
-860ba7b  Flash: fixup: yaml  [Tom Powell]
-6ab2e97  Flash: add workflow_dispatch event for gerrit hooks  [Tom Powell]
-02d2391  Flash: Update workflows versions  [Luca Stefani]
-2996237  Automatic translation import  [LineageOS Infra]
-2a405b3  Flash: Run ./gradlew app:generateBp  [Sebastiano Barezzi]
-a40d1ac  Flash: Use generateBp plugin from maven repo  [Sebastiano Barezzi]
-62d542b  Flash: Update CameraX maven repo URL  [LuK1337]
-b1ef084  Flash: Detect uncommitted changes after running app:generateBp  [LuK1337]
-710bac1  Flash: Use Material You color on location dialog  [Sebastiano Barezzi]
-b739f7c  Flash: Use Material You colors on QR bottom sheet  [Sebastiano Barezzi]
-c817e85  Flash: Properly observe / remove observers from LiveDatas  [Sebastiano Barezzi]
-fc9d957  Flash: Cleanup cameras parsing  [Sebastiano Barezzi]
-516c5dc  Flash: New camera mode selector UI  [Sebastiano Barezzi]
-ff9e48c  Fixup: Flash: Use a delegate for view model properties  [Sebastiano Barezzi]
-e57e2c8  Flash: Move all the remaining views changes to livedata observers  [Sebastiano Barezzi]
-4454f1b  Automatic translation import  [LineageOS Infra]
-bd4bf43  Flash: Update CameraX to 1.3.0-rc01  [LuK1337]
-a171f8a  Flash: Fix QR dialog actions scroll view  [Sebastiano Barezzi]
-342043d  Flash: Remove unused resources and ids  [Sebastiano Barezzi]
-f090cb6  Flash: Fix re-enabling microphone after video has started  [Sebastiano Barezzi]
-48b63c5  Flash: Update androidx.media3 to 1.1.1  [Sebastiano Barezzi]
-d18a7fe  Flash: Reformat code [2/2]  [Sebastiano Barezzi]
-f44c983  Flash: Reformat code [1/2]  [Sebastiano Barezzi]
-d6c2791  Flash: Avoid binding camera without permissions  [Sebastiano Barezzi]
-b9017a7  Flash: Get rid of SuppressLint  [Sebastiano Barezzi]
-5c306b1  Flash: Redo edge-to-edge configuration  [Sebastiano Barezzi]
-c4cb203  Flash: Remove useless no-action-bar style items from camera theme  [Sebastiano Barezzi]
-59349f4  Flash: Fix some Android Studio warnings  [Sebastiano Barezzi]
-1dac45a  Automatic translation import  [LineageOS Infra]
-66d491f  Flash: Restore old flash mode after Torch  [Luca Stefani]
-5d88ef5  Flash: Add missing copyright headers to icons  [Michael Bestas]
-5f5aab9  Flash: Move torch mode on photo mode to long press  [Sebastiano Barezzi]
-5d30d6e  Automatic translation import  [LineageOS Infra]
-1412639  Flash: use adaptive icon from Camera2 with different color  [maxwen]
-a03b16d  Flash: Override Camera2  [micky387]
-16e0299  Flash: Update CameraX to 1.3.0-beta02  [LuK1337]
-6ccd96d  Flash: Preserve classes extending SettingsFragment  [Luca Stefani]
-1ab0147  Flash: Set default_applicable_licenses  [Michael Bestas]
-8a827dd  Flash: Switch Android.bp to SPDX  [Michael Bestas]
-592175e  Flash: Start making it REUSE compliant  [Michael Bestas]
-c572b26  Automatic translation import  [LineageOS Infra]
-ef3e10d  Flash: Move Google Lens button to the center  [Leonardo Ledda]
-7d7fd7f  Flash: Use colorPrimary for camera mode and lens selector button  [Leonardo Ledda]
-c231a9f  Flash: get version name from commit hash  [Leonardo Ledda]
-c77b428  Flash: Add some processing settings  [Sebastiano Barezzi]
-b2ed32e  Flash: Use a delegate for view model properties  [Sebastiano Barezzi]
-c72b7b4  Flash: Add previous() and next() for all enum classes  [Sebastiano Barezzi]
-dfc35ea  Flash: SettingsFragment: Handle back button properly  [Sebastiano Barezzi]
-5689fdf  Flash: Better handle left/right swipe gesture  [Sebastiano Barezzi]
-593133f  Flash: Sort camera modes in CameraMode  [Sebastiano Barezzi]
-7bb7e98  Flash: Use the view model for LensSelectorLayout  [Sebastiano Barezzi]
-d13c338  Flash: Set UI components visibility on LiveData observer  [Sebastiano Barezzi]
-21e1a27  Flash: Remove useless timer mode button visibility setter  [Sebastiano Barezzi]
-5a0e933  Flash: Reformat code  [Sebastiano Barezzi]
-d05469c  Flash: Disable video quality button when there's only one quality available  [Sebastiano Barezzi]
-6402956  Flash: Add an info chip  [Sebastiano Barezzi]
-c0bba7b  Flash: Use LiveData to update secondary bar buttons UI  [Sebastiano Barezzi]
-c0ba257  Flash: Constrain count down view to the view finder  [Sebastiano Barezzi]
-e65963c  Flash: Inflate count down view content by its own  [Sebastiano Barezzi]
-561ec67  Flash: Handle thermal status  [Sebastiano Barezzi]
-6afd55c  Flash: Add volume buttons gestures  [Sebastiano Barezzi]
-0f1deb2  Flash: Handle camera errors  [Sebastiano Barezzi]
-aab3a89  Flash: Simplify flash mode handling  [Sebastiano Barezzi]
-5dc8e7d  Flash: CameraActivity: Get rid of update{PrimaryBar,CameraMode}Buttons()  [Sebastiano Barezzi]
-97d0dd2  Flash: Use the view model for views' rotation  [Sebastiano Barezzi]
-f08c489  Flash: Introduce CameraViewModel  [Sebastiano Barezzi]
-d40d75e  Flash: Kang some UI elements from GCam  [Leonardo Ledda]
-7a2544f  Flash: Derp it  [NurKeinNeid]
+23f3933  Flash: Import German translations  [NurKeinNeid]
+bfc7d0a  Automatic translation import  [LineageOS Infra]
 
 
-* vendor/derp
-b6a3828  charger: Support charger on vendor  [Tim Zimmermann]
+* vendor/fontage
+83e2de0  fontage: clockfonts: Add more ios clock fonts  [minaripenguin]
+ea2daad  fontage: clockfonts: Add more IOS 16 fonts  [YangJiiii]
+5e893f2  fontage: clockfonts: Import more clock styles  [rdx420]
 
 
 ====================
-    09-23-2023     
+    10-01-2023     
 ====================
+
+* build/make
+c8c29fe  Merge tag 'android-13.0.0_r75' of https://android.googlesource.com/platform/build into HEAD  [NurKeinNeid]
+
+
+* device/qcom/sepolicy-legacy-um
+0573993  Merge branch 'lineage-20.0-legacy-um' of https://github.com/LineageOS/android_device_qcom_sepolicy into HEAD  [NurKeinNeid]
+
 
 * frameworks/base
-e5337f7  Bubbles: Prevent one handed callbacks from being delayed  [minaripenguin]
-c36fa40  Avoid CalledFromWrongThreadException in BubbleController  [sai.gairuboina-IN009276]
+681dec5  SystemUI: Hide notification scrim background when entering split shade  [minaripenguin]
+7c608c9  SystemUI: Fade the QS footer background early when split shade is translucent  [minaripenguin]
+7917f34  AuthRippleController: Always make sure LightRevealScrim finishes regardless of the progress  [minaripenguin]
+465762f  SystemUI: Fix scrim transparency for split shade  [minaripenguin]
+2c42192  SystemUI: Less boring headsup enhancements and fixes  [minaripenguin]
+5f5d806  SystemUI: Fix exception when retrieving signal strength drawable  [minaripenguin]
+12b38e7  PixelPropsUtils: Update fingerprints for September  [NurKeinNeid]
 
 
-* hardware/interfaces
-c597ca5  camera: Make overrideFormat from reserved fields opt-in  [Rohit Sekhar]
-171e73e  frameworks: Update HIDL overrideFormat from HAL  [Abhijit Trivedi]
+* hardware/qcom-caf/thermal
+d30c553  Merge branch 'lineage-20.0' of https://github.com/LineageOS/android_hardware_qcom_thermal into HEAD  [NurKeinNeid]
 
 
 * manifest
-a6f8948  manifest: Track our own frameworks/opt/colorpicker  [LuK1337]
+f9dc5df  manifest: Track our own fork for CVE-2023-5217  [Luca Stefani]
 
 
 * vendor/derp
-2c912ac  derp: Hookup TARGET_CAMERA_OVERRIDE_FORMAT_FROM_RESERVED  [Rohit Sekhar]
-f5e1b89  apn: Add Mint Mobile  [Arvind Mukund]
+0d75539  overlay: Enforce smartspace configs  [jhenrique09]
+508c069  config: Exclude window_extensions addon on mini_tablet  [Bruno Martins]
+9cd7c65  qcom: Add parrot platform  [HeroBuxx]
+
+
+* vendor/qcom/opensource/data-ipa-cfg-mgr
+93932d2  Merge branch 'lineage-20.0' of https://github.com/LineageOS/android_vendor_qcom_opensource_data-ipa-cfg-mgr into HEAD  [NurKeinNeid]
 
 
 ====================
-    09-22-2023     
+    09-30-2023     
 ====================
 
-* frameworks/base
-701dbca  Merge tag 'android-13.0.0_r76' of https://android.googlesource.com/platform/frameworks/base into HEAD  [NurKeinNeid]
-26ae809  Merge tag 'android-13.0.0_r75' of https://android.googlesource.com/platform/frameworks/base into HEAD  [NurKeinNeid]
-0f47d57  services: Only ever apply cutout to internal displays  [nift4]
-cb7a48c  PhoneWindowManager: Pass correct invocation type for assistant launch on home long press  [Dhina17]
+* hardware/qcom-caf/thermal
+23baaf1  thermal-hal: Add HAL v2 support for sdm632  [Ankit Siddhapura]
 
 
-* manifest
-34133b0  manifest: September 2023 Security update 2  [Michael Bestas]
-
-
-* packages/apps/DerpLauncher
-1a16024  Merge tag 'android-13.0.0_r76' of https://android.googlesource.com/platform/packages/apps/Launcher3 into HEAD  [NurKeinNeid]
-c0ce394  Merge tag 'android-13.0.0_r75' of https://android.googlesource.com/platform/packages/apps/Launcher3 into HEAD  [NurKeinNeid]
-
-
-* vendor/qcom/opensource/audio-hal/st-hal-ar
-3e200da  st-hal-ar: Guard on oss sthal flag  [Aaron Kling]
+* vendor/qcom/opensource/data-ipa-cfg-mgr
+3c0a7c4  ipacm: Address ipacm start failure  [dianlujitao]
 
 
 ====================
-    09-21-2023     
+    09-29-2023     
 ====================
+
+====================
+    09-28-2023     
+====================
+
+* device/qcom/sepolicy-legacy-um
+9f61741  sepolicy: Label QTI Thermal HAL 2.0  [Bharath]
+
 
