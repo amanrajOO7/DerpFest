@@ -1,87 +1,138 @@
 ====================
-    10-02-2023     
-====================
-
-* frameworks/base
-97007a7  display: Add simple RGB color balance transform  [Danny Lin]
-
-
-* hardware/lineage/interfaces
-270a3fe  health: Add battery_charging_enabled node to ChargingControl node list  [me-cafebabe]
-
-
-* packages/apps/Flash
-23f3933  Flash: Import German translations  [NurKeinNeid]
-bfc7d0a  Automatic translation import  [LineageOS Infra]
-
-
-* vendor/fontage
-83e2de0  fontage: clockfonts: Add more ios clock fonts  [minaripenguin]
-ea2daad  fontage: clockfonts: Add more IOS 16 fonts  [YangJiiii]
-5e893f2  fontage: clockfonts: Import more clock styles  [rdx420]
-
-
-====================
-    10-01-2023     
+    11-13-2023     
 ====================
 
 * build/make
-c8c29fe  Merge tag 'android-13.0.0_r75' of https://android.googlesource.com/platform/build into HEAD  [NurKeinNeid]
+d810d96  Bump Security String to 2023-11-05  [Michael Bestas]
 
 
-* device/qcom/sepolicy-legacy-um
-0573993  Merge branch 'lineage-20.0-legacy-um' of https://github.com/LineageOS/android_device_qcom_sepolicy into HEAD  [NurKeinNeid]
+* device/xiaomi/beryllium
+f4ddbef  beryllium: cleanup manifest from duplicates  [Aman Singh]
+fa9c220  beryllium: Update manifest to target level 4  [Aman Singh]
+889ea01  beryllium: Uprev android.hardware.gnss to 2.1  [JohnnLee]
+a4b5cfb  beryllium: Update vendor blobs from PNX Also add script to update sha1sums of kanged blobs  [PainKiller3]
+
+
+* device/xiaomi/sdm845-common
+f256e18  sdm845-common: sepolicy: add context for the mapper shims  [Chenyang Zhong]
+196cc0a  sdm845-common: patch adreno blobs to use the mapper shim Replaced the following  [Aman Singh]
+e7acbeb  sdm845-common: Update adreno blobs from bangkk * from bangkk-user-13-T3TC33.18-12-3-6138c-release-keys  [Aman Singh]
+0403191  sdm845-common: build qtimapper shims  [Chenyang Zhong]
+34d95ac  sdm845-common: qtimapper-shim: install shims to vendor  [Chenyang Zhong]
+e8eb9f8  sdm845-common: qtimapper-shim: make common types inline variables  [Chenyang Zhong]
+4305342  sdm845-common: import qtimapper-shim  [Chenyang Zhong]
+0964479  sdm845-common: switch to QtiMapperExtensions  [Chenyang Zhong]
+cb9ad97  sdm845-common: Switch To AOSP Offline Charging  [Dyneteve]
+7c09005  sdm845-common: parts: Make HelpDialogFragment class public  [ShubhamB]
+0a4c173  sdm845-common: Sync up /system_ext properties with QSSI  [Alexander Koskovich]
+1cb5e9f  sdm845-common: sepolicy: Address rild denials  [LuK1337]
+4c90b6d  sdm845-common: Disable iWlan legacy mode This reverts commit 822bd47146d3162b9c2188963cd5f7149ff035de.  [Aman Singh]
+be0acdf  sdm845-common: parts: Declare exported flags in manifest  [Arian]
+53b93b0  sdm845-common: parts: Target current sdk  [Arian]
+b78df6f  sdm845-common: Uprev android.hardware.gnss to 2.1  [JohnnLee]
+8f21880  sdm845-common: cleanup manifest from duplicates  [Aman Singh]
+fb3052f  sdm845-common: Provide android.frameworks.sensorservice@1.0 on vendor  [Pavel Dubrova]
+1fde416  sdm845-common: Update LPA interface version  [Taiyab Haque]
+c440933  sdm845-common: Uprev Neural Networks interface version  [Mukul Dhir]
+a390cc4  sdm845-common: Update esepowermanager Interface version  [Bhuvan Varshney]
+abb8823  sdm845-common: Build libavservices_minijail vendor variant  [althafvly]
+05d9593  sdm845-common: ims: IRTPservice 3.0  [Sanjeev Mittal]
+b69d8ba  sdm845-common: Update QtiRadio version to 2.4  [Vidyalakshmi Badiger]
+d18d0a4  sdm845-common: IMS: Enable IImsRadio v1.6  [Suresh Koleti]
+7aa9f6d  sdm845-common: FR 58378: Update factory version to v2.1  [Pavan Kumar M]
+32ad85b  sdm845-common: Add IImsFactory and uceservice HAL entry  [Pavan Kumar M]
+e9f906e  sdm845-common: Enable 1.5 IRadio hal in manifest file  [Susheel Nyamala]
+6c826f4  sdm845-common: Update system blobs from pong 13  [adi8900]
+99033e6  sdm845-common: Update vendor blobs from PNX  [PainKiller3]
+ad338be  sdm845-common: Remove IMS & DPM Symlinks  [PainKiller3]
+
+
+* frameworks/av
+be91b83  Merge tag 'android-security-13.0.0_r11' of https://android.googlesource.com/platform/frameworks/av into HEAD  [Aman Singh]
 
 
 * frameworks/base
-681dec5  SystemUI: Hide notification scrim background when entering split shade  [minaripenguin]
-7c608c9  SystemUI: Fade the QS footer background early when split shade is translucent  [minaripenguin]
-7917f34  AuthRippleController: Always make sure LightRevealScrim finishes regardless of the progress  [minaripenguin]
-465762f  SystemUI: Fix scrim transparency for split shade  [minaripenguin]
-2c42192  SystemUI: Less boring headsup enhancements and fixes  [minaripenguin]
-5f5d806  SystemUI: Fix exception when retrieving signal strength drawable  [minaripenguin]
-12b38e7  PixelPropsUtils: Update fingerprints for September  [NurKeinNeid]
+066e342  SystemUI: Make QS footer background transparent  [NurKeinNeid]
+838d629  display: Add simple RGB color balance transform  [Danny Lin]
+815770d  Revert "fwb: Redesign seekbar"  [Aman Singh]
+fd01195  PixelPropsUtils: Make CTS/Play Integrity pass again  [Dyneteve]
+3af372c  Merge tag 'android-13.0.0_r83' of https://android.googlesource.com/platform/frameworks/base into HEAD  [Aman Singh]
+fd97ae4  Merge tag 'android-security-13.0.0_r11' of https://android.googlesource.com/platform/frameworks/base into HEAD  [Aman Singh]
 
 
-* hardware/qcom-caf/thermal
-d30c553  Merge branch 'lineage-20.0' of https://github.com/LineageOS/android_hardware_qcom_thermal into HEAD  [NurKeinNeid]
+* hardware/qcom-caf/sdm845/display
+5ccba04  display: Add LOCAL_VINTF_FRAGMENTS for allocator/mapper  [Tharaga Balachandran]
+d5a80c0  gralloc: Add support for QtiMapperExtension version 1.1  [Ashish Kumar]
+ddcb1fd  gralloc: Add support for getFormatLayout HAL API.  [Arun Kumar K.R]
+56719f9  gralloc: report getCustomFormatFlags as unsupported  [Chenyang Zhong]
+15d5d42  gralloc: drop additional Qti Mapper v1.1 namespace  [Chenyang Zhong]
+ae2f54f  gralloc: Add QtiMapperExtensions  [Tharaga Balachandran]
+2f053dc  display: Switch to QTI allocator and mapper interface.  [Ashish Kumar]
+51e2104  gralloc: bring back mapper and allocator version variables  [Chenyang Zhong]
 
 
-* manifest
-f9dc5df  manifest: Track our own fork for CVE-2023-5217  [Luca Stefani]
+* packages/apps/KeyChain
+d90f056  Merge tag 'android-13.0.0_r83' into staging/lineage-20.0_merge-android-13.0.0_r83  [Michael Bestas]
+
+
+* packages/apps/Settings
+8628d56  Settings: Show current value of color balance sliders  [Adithya R]
+a7ea1f7  Add sliders for color balance adjustment via ColorDisplayManager  [Danny Lin]
 
 
 * vendor/derp
-0d75539  overlay: Enforce smartspace configs  [jhenrique09]
-508c069  config: Exclude window_extensions addon on mini_tablet  [Bruno Martins]
-9cd7c65  qcom: Add parrot platform  [HeroBuxx]
+80320e6  derp: Update CUSTOM_SECURITY_PATCH for November 2023 Security update  [Aman Singh]
 
 
-* vendor/qcom/opensource/data-ipa-cfg-mgr
-93932d2  Merge branch 'lineage-20.0' of https://github.com/LineageOS/android_vendor_qcom_opensource_data-ipa-cfg-mgr into HEAD  [NurKeinNeid]
+* vendor/qcom/opensource/interfaces
+99a8849  Revert "interfaces: Introduce vendor.qti.hardware.fm@1.0 HAL"  [Aman Singh]
+
+
+* vendor/xiaomi/beryllium
+cc7f6f0  beryllium: Update vendor blobs from PNX  [PainKiller3]
+
+
+* vendor/xiaomi/sdm845-common
+25d95f4  sdm845-common: patch adreno blobs to use the mapper shim     Replaced the following  [Aman Singh]
+673bbe7  sdm845-common: Update adreno blobs from bangkk * from bangkk-user-13-T3TC33.18-12-3-6138c-release-keys  [Aman Singh]
+a6c993e  sdm845-common: Switch To AOSP Offline Charging  [Dyneteve]
+7d935b2  sdm845-common: Update system blobs from pong 13  [adi8900]
+c37cfde  sdm845-common: Update vendor blobs from PNX  [PainKiller3]
 
 
 ====================
-    09-30-2023     
-====================
-
-* hardware/qcom-caf/thermal
-23baaf1  thermal-hal: Add HAL v2 support for sdm632  [Ankit Siddhapura]
-
-
-* vendor/qcom/opensource/data-ipa-cfg-mgr
-3c0a7c4  ipacm: Address ipacm start failure  [dianlujitao]
-
-
-====================
-    09-29-2023     
+    11-12-2023     
 ====================
 
 ====================
-    09-28-2023     
+    11-11-2023     
 ====================
 
-* device/qcom/sepolicy-legacy-um
-9f61741  sepolicy: Label QTI Thermal HAL 2.0  [Bharath]
+====================
+    11-10-2023     
+====================
+
+====================
+    11-09-2023     
+====================
+
+* external/webp
+67e8c06  Merge tag 'android-security-13.0.0_r11' into staging/lineage-20.0_merge-android-security-13.0.0_r11  [Michael Bestas]
+
+
+* packages/modules/DnsResolver
+a2278b6  Merge tag 'android-security-13.0.0_r11' into staging/lineage-20.0_merge-android-security-13.0.0_r11  [Michael Bestas]
+
+
+* packages/modules/StatsD
+f4cb39c  Merge tag 'android-security-13.0.0_r11' into staging/lineage-20.0_merge-android-security-13.0.0_r11  [Michael Bestas]
+
+
+* packages/providers/TelephonyProvider
+64aa178  Merge tag 'android-security-13.0.0_r11' into staging/lineage-20.0_merge-android-security-13.0.0_r11  [Michael Bestas]
+
+
+* system/ca-certificates
+d3ca059  Merge tag 'android-security-13.0.0_r11' into staging/lineage-20.0_merge-android-security-13.0.0_r11  [Michael Bestas]
 
 
