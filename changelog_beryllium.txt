@@ -1,122 +1,66 @@
 ====================
-    08-08-2024     
+    08-15-2024     
 ====================
 
-* build/make
-0042db3  Merge tag 'android-14.0.0_r56' of https://android.googlesource.com/platform/build into 14  [NurKeinNeid]
-
-
-* build/release
-8058939  Merge tag 'android-14.0.0_r56' of https://android.googlesource.com/platform/build/release into 14  [NurKeinNeid]
-
-
-* frameworks/av
-129846d  Merge tag 'android-14.0.0_r56' of https://android.googlesource.com/platform/frameworks/av into 14  [NurKeinNeid]
+* device/qcom/sepolicy_vndr/legacy-um
+23e11de  lito: Allow init write to discard_max_bytes  [Michael Bestas]
 
 
 * frameworks/base
-a8bf925  base: Update `lint-baseline.txt`  [Aman Singh]
-4539422  PixelPropsUtils: Update fingerprints for August security patch  [NurKeinNeid]
-7bef98c  Merge tag 'android-14.0.0_r56' of https://android.googlesource.com/platform/frameworks/base into 14  [NurKeinNeid]
-
-
-* frameworks/native
-851fd59  Merge tag 'android-14.0.0_r56' of https://android.googlesource.com/platform/frameworks/native into 14  [NurKeinNeid]
-
-
-* hardware/interfaces
-196227f  Merge tag 'android-14.0.0_r56' of https://android.googlesource.com/platform/hardware/interfaces into 14  [NurKeinNeid]
-
-
-* manifest
-7b4aa6e  Merge tag 'android-14.0.0_r56' of https://android.googlesource.com/platform/manifest into 14  [NurKeinNeid]
+ec0b9d2  base: Update `lint-baseline.txt`  [Aman Singh]
+0d7a9e0  SystemUI: Show island notification on landscape  [minaripenguin]
+7d32476  Island: Recycle icon bitmap to avoid memory leak  [minaripenguin]
+e264465  PixelPropsUtils: Update fingerprint to latest husky beta  [NurKeinNeid]
+05279c0  SystemUI: Resolve regressions caused by continuous updating of notification icons  [minaripenguin]
 
 
 * packages/apps/DerpLauncher
-3f4461d  DerpLauncher: Bump version to AP2A.240805.005  [NurKeinNeid]
+758d458  DerpLauncher: Copy 4x5 grid size from Pixel  [Richard Raya]
+fd6fbef  DerpLauncher: allapps: Make google search of the query  [Jyotiraditya Panda]
+dbc81d7  DerpLauncher: allapps: Do not hide keyboard when query is empty  [Jyotiraditya Panda]
 
 
-* packages/apps/Flash
-83eea02  Flash: change to FlashMode.OFF before switching usecases  [Cosmin Tanislav]
+* packages/apps/GameSpace
+1a96d3b  GameSpace: Import qs_tile_background ripple resource for tile  [someone5678]
+4371c13  GameSpace: Migrate MainSwitchBar and Switch to Material3  [Bruno Martins]
+4949796  GameSpace: Enable enableOnBackInvokedCallback  [someone5678]
 
 
-* packages/apps/Settings
-798c52c  Merge tag 'android-14.0.0_r56' of https://android.googlesource.com/platform/packages/apps/Settings into 14  [NurKeinNeid]
-
-
-* packages/modules/Bluetooth
-57445b8  Merge tag 'android-14.0.0_r56' of https://android.googlesource.com/platform/packages/modules/Bluetooth into 14  [NurKeinNeid]
-
-
-====================
-    08-07-2024     
-====================
-
-* frameworks/base
-f15720b  fixup! base: Add landscape battery style [1/2]  [NurKeinNeid]
-e768f69  SystemUI: BatteryMeterView: Handle some edge cases  [Ido Ben-Hur]
-
-
-* hardware/xiaomi
-8b79748  Provide a Java library with required Xiaomi telephony methods  [danielml]
-
-
-* manifest
-1da9b7f  Manifest for Android 14.0.0 Release 56 (AP2A.240805.005.A1)  [The Android Open Source Project]
+* vendor/pixel-framework
+e646567  SettingsGoogle: Fix Quick Tap open apps apps list crashing  [minaripenguin]
 
 
 ====================
-    08-06-2024     
+    08-14-2024     
 ====================
 
 ====================
-    08-05-2024     
+    08-13-2024     
 ====================
 
-* frameworks/base
-5a19de7  SystemUI: LandscapeBatteryDrawable: Further tune colors  [Ido Ben-Hur]
+====================
+    08-12-2024     
+====================
 
-
-* hardware/xiaomi
-9617438  vintf: Add PixelWorks Iris interfaces to FCM  [Andrey Sprynga]
+* device/xiaomi/sdm845-common
+92b4cf4  sdm845-common: Add prebuilt protobuf 3.9.1 to vendor partition.  [Krzysztof Kosiński]
+8d5f01c  Revert "sdm845-common: Patch widevine to load libprotobuf-cpp-full-3.9.1"  [Aman Singh]
 
 
 * vendor/derp
-89a55ed  overlay: Update themed icons  [NurKeinNeid]
+d84854a  Merge pull request #67 from GhostMaster69-dev/14  [Alexander Brunswig]
 
 
 ====================
-    08-04-2024     
+    08-11-2024     
 ====================
 
-* bootable/recovery
-9f25bb0  recovery_ui: Retry for getting battery info  [Luofan Chen]
+* build/make
+c6551d2  Revert "Remove non existent snapuserd.recovery package"  [David Anderson]
+5db64f4  Revert "releasetools: support prebuilt vendor.img"  [Dhina17]
 
 
-* frameworks/base
-1ba1445  SystemUI: Animate StatusBarState doze transition using DarkAnimator  [someone5678]
-853ed52  PixelPropsUtils: Final cleanup  [Alvin Francis]
-311071e  SystemUI: battery: Refactor battery style code  [Ido Ben-Hur]
-8a701d4  core: Pixel experience Blacklist For Google Photos for Android 13  [Akash Srivastava]
-6da184c  base: *LandscapeBatteryDrawable: Always use a single text color  [Ido Ben-Hur]
-15f0a65  LandscapeBatteryDrawable: Get rid of dual tone colors  [Ido Ben-Hur]
-89d7568  CircleBatteryDrawable: Always calculate background off of fill color  [Ido Ben-Hur]
-7a33f11  Automatic translation import  [LineageOS Infra]
-8e99379  Fallback BUTTON_SELECT to BACK  [Aaron Kling]
-3be0146  camera2: allow access to CaptureRequest.mLogicalCameraSettings  [Cosmin Tanislav]
-
-
-* frameworks/libs/systemui
-c1c9261  iconloaderlib: Extend themed icons to recents  [minaripenguin]
-31043cb  iconloaderlib: add support for custom themed icon pack [1/3]  [jhonboy121]
-
-
-* packages/apps/DerpLauncher
-ea1aa35  DerpLauncher: Integrate themed icons the recents  [minaripenguin]
-4e460a2  DerpLauncher: add support for custom themed icon pack [3/3]  [jhonboy121]
-
-
-* packages/apps/Settings
-cff1763  Automatic translation import  [LineageOS Infra]
+* system/core
+4bc3b0b  Make snapuserd recovery_available.  [David Anderson]
 
 
