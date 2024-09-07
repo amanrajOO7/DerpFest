@@ -1,66 +1,84 @@
 ====================
-    08-15-2024     
-====================
-
-* device/qcom/sepolicy_vndr/legacy-um
-23e11de  lito: Allow init write to discard_max_bytes  [Michael Bestas]
-
-
-* frameworks/base
-ec0b9d2  base: Update `lint-baseline.txt`  [Aman Singh]
-0d7a9e0  SystemUI: Show island notification on landscape  [minaripenguin]
-7d32476  Island: Recycle icon bitmap to avoid memory leak  [minaripenguin]
-e264465  PixelPropsUtils: Update fingerprint to latest husky beta  [NurKeinNeid]
-05279c0  SystemUI: Resolve regressions caused by continuous updating of notification icons  [minaripenguin]
-
-
-* packages/apps/DerpLauncher
-758d458  DerpLauncher: Copy 4x5 grid size from Pixel  [Richard Raya]
-fd6fbef  DerpLauncher: allapps: Make google search of the query  [Jyotiraditya Panda]
-dbc81d7  DerpLauncher: allapps: Do not hide keyboard when query is empty  [Jyotiraditya Panda]
-
-
-* packages/apps/GameSpace
-1a96d3b  GameSpace: Import qs_tile_background ripple resource for tile  [someone5678]
-4371c13  GameSpace: Migrate MainSwitchBar and Switch to Material3  [Bruno Martins]
-4949796  GameSpace: Enable enableOnBackInvokedCallback  [someone5678]
-
-
-* vendor/pixel-framework
-e646567  SettingsGoogle: Fix Quick Tap open apps apps list crashing  [minaripenguin]
-
-
-====================
-    08-14-2024     
-====================
-
-====================
-    08-13-2024     
-====================
-
-====================
-    08-12-2024     
-====================
-
-* device/xiaomi/sdm845-common
-92b4cf4  sdm845-common: Add prebuilt protobuf 3.9.1 to vendor partition.  [Krzysztof Kosiński]
-8d5f01c  Revert "sdm845-common: Patch widevine to load libprotobuf-cpp-full-3.9.1"  [Aman Singh]
-
-
-* vendor/derp
-d84854a  Merge pull request #67 from GhostMaster69-dev/14  [Alexander Brunswig]
-
-
-====================
-    08-11-2024     
+    09-07-2024     
 ====================
 
 * build/make
-c6551d2  Revert "Remove non existent snapuserd.recovery package"  [David Anderson]
-5db64f4  Revert "releasetools: support prebuilt vendor.img"  [Dhina17]
+54c9112  Merge tag 'android-14.0.0_r67' of https://android.googlesource.com/platform/build into 14  [NurKeinNeid]
 
 
-* system/core
-4bc3b0b  Make snapuserd recovery_available.  [David Anderson]
+* build/release
+f6626d9  Merge tag 'android-14.0.0_r67' of https://android.googlesource.com/platform/build/release into 14  [NurKeinNeid]
 
+
+* frameworks/base
+96e7a65  base: Update `lint-baseline.txt`  [Aman Singh]
+26aefe7  PixelPropsUtils: Update fingerprints for September  [NurKeinNeid]
+1ef6c56  Merge tag 'android-14.0.0_r67' of https://android.googlesource.com/platform/frameworks/base into 14  [NurKeinNeid]
+
+
+* hardware/qcom-caf/sm8150/display
+78906d9  gralloc: add checks for reserved size of allocation requests  [Vikas batchu]
+
+
+* manifest
+7febfbc  pixel: September 2024 Security update  [Michael Bestas]
+b2f4347  Merge tag 'android-14.0.0_r67' of https://android.googlesource.com/platform/manifest into 14  [NurKeinNeid]
+
+
+* packages/apps/Settings
+d4a5dea  Merge tag 'android-14.0.0_r67' of https://android.googlesource.com/platform/packages/apps/Settings into 14  [NurKeinNeid]
+
+
+* packages/modules/Permission
+357a3db  Merge tag 'android-14.0.0_r67' of https://android.googlesource.com/platform/packages/modules/Permission into 14  [NurKeinNeid]
+
+
+* packages/services/Telecomm
+73d9be9  Merge tag 'android-14.0.0_r67' of https://android.googlesource.com/platform/packages/services/Telecomm into 14  [NurKeinNeid]
+
+
+* vendor/derp
+21039ea  apn: Set correct apn for `Grameenphone`  [hipexscape]
+
+
+====================
+    09-06-2024     
+====================
+
+* hardware/qcom-caf/sm8250/display
+6583556  fixup! gralloc: Conditionally revert changes related to gralloc struct  [Michael Bestas]
+
+
+* hardware/qcom-caf/sm8350/display
+04d8f7b  fixup! gralloc: Conditionally revert changes related to gralloc struct  [Michael Bestas]
+
+
+====================
+    09-05-2024     
+====================
+
+* hardware/qcom-caf/sdm845/display
+328365b  gralloc: add checks for buffer allocation requests  [Min Cheng]
+4921c5a  gralloc: add checks for reserved size of allocation requests  [Vikas batchu]
+
+
+* hardware/qcom-caf/sm8250/display
+964d427  gralloc: add checks for reserved size of allocation requests  [Vikas batchu]
+
+
+* hardware/qcom-caf/sm8350/display
+77a6222  gralloc: add checks for reserved size of allocation requests  [Vikas batchu]
+
+
+====================
+    09-04-2024     
+====================
+
+* manifest
+16d4749  Manifest for Android 14.0.0 Release 67  [The Android Open Source Project]
+
+
+====================
+    09-03-2024     
+====================
 
